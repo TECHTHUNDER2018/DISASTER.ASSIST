@@ -4,24 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DISASTER-ASSIST</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
 </head>
 <body>
+    <!-- header section -->
+    <header>
+        <div class="logo">
+            <h1>Disaster Assist</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="dropbtn">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="aftermath.html">AFTERMATH MANAGEMENT</a></li>
+                        <li><a href="communitymeal.html">COMMUNITY MEAL SHARE</a></li>
+                        <li><a href="notification.html">UNIFIED INCIDENT COMMUNICATION HUB</a></li>
+                        <li><a href="disasteranalytics.html">SMART DISASTER TERRAIN ANALYTICS</a></li>
+                        <li><a href="reliefcamp.html">COMMUNITY DISASTER HUB </a></li>
+                        <li><a href="planning.html">PLAN AHEAD</a></li>
+                    </ul>
+                </li>
+                <li><a href="joinus.html">JOIN US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>
+            <span>Prepare.</span>
+            <span>Connect.</span>
+            <span>Recover.</span>
+        </h1>
+        <p>Community-driven tools to help you stay safe before, during, and after disasters.</p>
+        <a href="login.html" class="cta-button">Get Prepared</a>
+    </div>
+</section>
+
+
+
+<section id="services" class="services-section">
+    <h2>Our Services</h2>
+    <div class="slider-container">
+        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="services-slider">
+            <div class="service-item">
+                <i class="fas fa-tools"></i>
+                <h3>Aftermath Management</h3>
+                <p>Efficiently manage disaster recovery efforts and provide support to affected communities.</p>
+                <a href="aftermath.html" class="service-link">Learn More</a>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-utensils"></i>
+                <h3>Community Meal Share</h3>
+                <p>Connect with local communities to share meals and resources during emergencies.</p>
+                <a href="communitymeal.html" class="service-link">Learn More</a>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Unified Incident Communication Hub</h3>
+                <p>Stay informed with real-time updates and verified emergency alerts.</p>
+                <a href="notification.html" class="service-link">Learn More</a>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-chart-area"></i>
+                <h3>Smart Disaster Terrain Analytics</h3>
+                <p>Analyze disaster-prone areas with advanced terrain analytics for better preparedness.</p>
+                <a href="disasteranalytics.html" class="service-link">Learn More</a>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-home"></i>
+                <h3>Community Disaster Hub</h3>
+                <p>Find nearby relief camps and community hubs for shelter and resources.</p>
+                <a href="reliefcamp.html" class="service-link">Learn More</a>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Plan Ahead</h3>
+                <p>Prepare for disasters with actionable plans and resources tailored to your needs.</p>
+                <a href="planning.html" class="service-link">Learn More</a>
+            </div>
+        </div>
+        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</section>
     
-    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact us</h3>
+                <p>info@disasterassist.com</p>
+                <p>(125) 498-7950</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Terms</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
+    <script src="script/index.js"></script>
 </body>
 </html>

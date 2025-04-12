@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISASTER-ASSIST</title>
+    <link rel="stylesheet" href="style/reliefcamp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="logo">
+            <h1>Disaster Assist</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="dropbtn">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="aftermath.html">AFTERMATH MANAGEMENT</a></li>
+                        <li><a href="communitymeal.html">COMMUNITY MEAL SHARE</a></li>
+                        <li><a href="notification.html">UNIFIED INCIDENT COMMUNICATION HUB</a></li>
+                        <li><a href="disasteranalytics.html">SMART DISASTER TERRAIN ANALYTICS</a></li>
+                        <li><a href="reliefcamp.html">COMMUNITY DISASTER HUB </a></li>
+                        <li><a href="planning.html">PLAN AHEAD</a></li>
+                    </ul>
+                </li>
+                <li><a href="joinus.html">JOIN US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Find Local Disaster Assistance Near You</h1>
+        <p>Browse a network of verified community hubs offering emergency support and recovery resources.</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter your city or ZIP code">
+            <button type="submit">Search</button>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div id="map"></div>
+        <div class="map-pins-container">
+        <div class="map-pin" style="top: 30%; left: 20%;"></div>
+        <div class="map-pin" style="top: 60%; left: 40%;"></div>
+        <div class="map-pin" style="top: 40%; left: 60%;"></div>
+        <div class="map-pin" style="top: 25%; left: 80%;"></div>
+        <div class="hub-info" style="top: 55%; left: 65%; text-align: left;">
+            <h3>Central Community Hub</h3>
+            <p>Shelter, Food & Water</p>
+            <a href="#" class="view-details-button">View Details</a>
+        </div>
+        </div>
+    </section>
+
+    <section class="available-services">
+        <h2>Available Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Shelter</span>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Food & Water</span>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-suitcase-medical"></i>
+                <span>First Aid</span>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-charging-station"></i>
+                <span>Charging Station</span>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-wifi"></i>
+                <span>Internet Access</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="local-hub-section">
+        <h2>Connect with Your Local Hub</h2>
+        <a href="#" class="find-hub-button">Find a Hub Near You</a>
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact us</h3>
+                <p>info@disasterassist.com</p>
+                <p>(125) 498-7950</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Terms</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/reliefcamp.js"></script>
+</body>
+</html>
