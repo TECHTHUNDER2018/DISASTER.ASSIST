@@ -44,12 +44,10 @@ To provide a unified platform that connects community members, emergency respond
 
 ## 🧠 Technology Stack
 
-- **Frontend**: Figma (UI Design), React.js (prototype extension)
-- **Backend**: Node.js / Express.js
-- **Database**: MongoDB / Firebase
+- **Frontend**: Figma (UI Design), Html, CSS, Javascript 
 - **Maps & Location**: Google Maps API
-- **Data Visualization**: Chart.js / D3.js
 - **Notifications**: Firebase Cloud Messaging, Twilio (SMS), SendGrid (Email)
+- **Version Control**: GIT
 
 ---
 
