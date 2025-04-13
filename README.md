@@ -1,3 +1,9 @@
+VIDEO LINK: https://drive.google.com/file/d/1vfGrJVexUvCY1lx-VIj2DbaYKH4KmjRy/view?usp=sharing
+PRESENTATION LINK: https://drive.google.com/file/d/1P1rIMA5Rkb_zlHxsKOL2JYDtXcQpi1U4/view?usp=sharing
+
+
+
+
 # 🌐 Disaster Assist
 
 _Disaster Assist_ is a comprehensive disaster management platform designed to empower communities and authorities by streamlining communication, coordination, and response during emergencies. It offers a user-friendly web application with a robust feature set, interactive dashboards, real-time updates, and community-driven programs.
