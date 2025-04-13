@@ -137,35 +137,99 @@ nav {
   
   .risk-assessment {
     padding: 2rem;
-  }
-  
-  .risk-assessment table {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.risk-assessment h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.risk-assessment table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-  }
-  
-  .risk-assessment th, .risk-assessment td {
-    border: 1px solid #ddd;
-    padding: 0.8rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.risk-assessment th {
+    background-color: #1a237e;
+    color: #fff;
+    font-weight: 600;
+    padding: 1rem;
     text-align: left;
-  }
-  
-  .risk-assessment .high {
-    color: #dc2626;
-    font-weight: bold;
-  }
-  
-  .risk-assessment .moderate {
-    color: #f59e0b;
-    font-weight: bold;
-  }
-  
-  .risk-assessment .low {
-    color: #16a34a;
-    font-weight: bold;
-  }
-  
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.risk-assessment td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.risk-assessment tr:hover td {
+    background-color: #2e418e;
+}
+
+.risk-assessment tr:last-child td {
+    border-bottom: none;
+}
+
+/* Risk Level Styles */
+.risk-assessment .high {
+    color: #fff;
+    background-color: #ef5350;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.risk-assessment .moderate {
+    color: #fff;
+    background-color: #ffa726;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.risk-assessment .low {
+    color: #fff;
+    background-color: #66bb6a;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px) {
+    .risk-assessment {
+        padding: 1rem;
+    }
+
+    .risk-assessment table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .risk-assessment th,
+    .risk-assessment td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
   .preparedness-tips {
     padding: 2rem;
     background-color: #f8f9fa;
@@ -199,7 +263,38 @@ nav {
     text-align:center;
 }
 
+.guide {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
 
+.guide:hover {
+    transform: translateY(-5px);
+}
+
+.download-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    animation: slideIn 0.3s ease-out;
+    z-index: 1000;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 
 

@@ -97,7 +97,7 @@ nav {
     background-color: #575757;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -196,21 +196,171 @@ body {
         margin:3px;
     }
    
-  .resources {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    gap:40px;
-    margin-left:35px;
-    justify-content:space-between;
-  }
+    .resources {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 40px 20px;
+        background: #f8f9fa;
+    }
+    
+    .res {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .res:hover {
+        transform: translateY(-5px);
+    }
+    
+    .res h2 {
+        color: #1a237e;
+        margin-bottom: 25px;
+        font-size: 1.8rem;
+        border-bottom: 3px solid #3949ab;
+        padding-bottom: 10px;
+    }
+    
+    .res h3 {
+        color: #34495e;
+        margin: 20px 0 15px;
+        font-size: 1.3rem;
+    }
+    
+    .checklist-items {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .checklist-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .checklist-item:hover {
+        background: #e3f2fd;
+    }
+    
+    .checklist-item i {
+        font-size: 24px;
+        color: #1a237e;
+    }
+    
+    .btn1 {
+        background: #1a237e;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-left: auto;
+    }
+    
+    .btn1:hover {
+        background: #3949ab;
+        transform: translateY(-2px);
+    }
+    
+    .emergency-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #34495e;
+    }
+    
+    .contact-item i {
+        color: #e74c3c;
+        font-size: 20px;
+    }
+    
+    .quick-links {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .quick-links li {
+        margin: 12px 0;
+        transition: transform 0.3s ease;
+    }
+    
+    .quick-links li:hover {
+        transform: translateX(5px);
+    }
+    
+    .quick-links a {
+        color: #3949ab;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .quick-links i {
+        font-size: 18px;
+        color: #1a237e;
+    }
+    
+    
+    @media (max-width: 768px) {
+        .resources {
+            grid-template-columns: 1fr;
+        }
+    
+        .res {
+            padding: 20px;
+        }
+    }
 
-  .resources div {
-    width: 48%;
-  }
-  .res:hover {
-    box-shadow: 2px 2px 10px rgb(188, 178, 178); 
-}
+    .download-notification {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        animation: slideIn 0.3s ease-out;
+        z-index: 1000;
+    }
+    
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    .btn1:hover {
+        background: #3949ab;
+        transform: translateY(-2px);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+
+
+  
 
   .feedback {
     background-color: #f0f0f0;
